@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Detail</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>{{ object.user.username }}</h1>
+    <p>{{ object.bio }}</p>
+    <a href="{% url 'profile-list' %}">Back to list</a>
+</body>
+</html>
